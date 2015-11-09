@@ -1,30 +1,3 @@
-body, div, a {
-    padding:0;
-    margin:0;
-    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-#calculator {
-	background-color: #999;
-	width: 310px;
-	height: 460px;
-var round = function(text, pos) {
-    function setCharAt(str,index,chr) {
-       if(index > str.length-1) return str;
-        return str.substr(0,index) + chr + str.substr(index+1);
-    }
-    if (text.length > pos) {
-        for (i=1;i<text.length;i++){
-            if (text[i] === ".") {
-                i = text.length;
-                if (parseFloat(text[pos],10) >= 5) {
-                    text = (setCharAt(text,pos-1,((parseFloat(text[pos-1],10))+1).toString(10))).substr(0,pos);
-                } else {
-                    text = text.substr(0,pos);
-                }
-            } 
-        }
-    }
 var round = function(text, pos) {
     function setCharAt(str,index,chr) {
        if(index > str.length-1) return str;

@@ -26,7 +26,8 @@ body, div, a {
 }
 
 #numbers, #operators {
-	margin: auto;	
+	margin: auto;
+	cursor: pointer;
 }
 
 #operators a {

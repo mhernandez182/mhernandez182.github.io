@@ -37,13 +37,13 @@ $(function() {
 		number += $(this).text();
 		totaldiv.text(number);
 		testNumLength(number);
-        if (operator === "+" && newnumber != 0){
+        if (operator === "+" && newnumber != ""){
 			number = (parseInt(newnumber, 10) + parseInt(number,10));
-		} else if (operator === "-" && newnumber != 0){
+		} else if (operator === "-" && newnumber != ""){
 			number = (parseInt(newnumber, 10) - parseInt(number,10));
-		} else if (operator === "/" && newnumber != 0){
+		} else if (operator === "/" && newnumber != ""){
 			number = (parseInt(newnumber, 10) / parseInt(number,10));
-		} else if (operator === "*" && newnumber != 0){
+		} else if (operator === "*" && newnumber != ""){
 			number = (parseInt(newnumber, 10) * parseInt(number,10));
 		}
     });

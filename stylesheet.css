@@ -1,0 +1,51 @@
+﻿* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.myHeader {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.content {
+    clear: both;
+    margin-left: 20px;
+}
+
+.lbl {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction:row;
+    width:150px;
+    padding-left:10px;
+    padding-top:5px;
+}
+
+.fld {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction:row;
+    padding-left:10px;
+    padding-top:5px;
+}
+
+
+.fldGrp {
+    display:flex;
+    flex-direction:row;
+    margin-top:2%;
+    margin-bottom:2%;
+    justify-content:space-around;
+}
+
+.fldGrp1 {
+    display:flex;
+    flex-direction:row;
+    margin-top:2%;
+    margin-bottom:2%;
+}
